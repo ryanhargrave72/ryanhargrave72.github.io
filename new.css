@@ -36,6 +36,7 @@ header{
 
 nav {
     flex: 2
+
 }
 
 .nav-links {
@@ -48,27 +49,45 @@ nav {
     font-size: 1vw;
     font-size-adjust: initial;
     text-decoration: none;
+    transition: all 0.1s ease;
+}
+.nav-link:hover {
+    color: rgb(180, 180, 180);
 }
 
 .email {
     flex: 1;
     justify-content: flex-end;
     list-style: none;
-    color: rgb(0, 0, 22);
-    
+    color: white;
 }
 
 .drop-shadow {
+    width: 100%;
     height: 10px;
-    align-self: baseline;
+    position: relative;
+    align-self: flex-end;
     color: black;
-    background-color: rgb(0, 0, 22);
+    background-color: rgb(180, 180, 180);
 }
 
 button {
     background-color: rgb(255, 72, 72);
+    color: white;
     padding: 12px;
-    outline: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-style: solid;
+    font-style: none;
+    border-radius: 3px;
+    border-width: 5px;
+    border-color: rgb(255, 72, 72);
+}
+
+button:hover {
+    background-color: rgb(141, 39, 39);
+    border-color: rgb(141, 39, 39);
+    transition: all 0.3s ease;
 }
 
 .main {
@@ -76,11 +95,41 @@ button {
     color: rgb(0, 0, 22);
 }
 
-.introduction {
+.intro-text {
     text-align: center;
     justify-content: flex-end;
     background-color: rgb(0, 0, 22);
     color: white;
+}
+
+.space {
+    height: 100px;
+    background-color: rgb(0, 0, 22);
+}
+
+.spacew {
+    height: 100px;
+    color: white;
+}
+
+.what-i-bring {
+    text-align: center;
+    justify-content: flex-end;
+    background-color: white;
+    color: rgb(0, 0, 22);
+    font-size: 1vw;
+    font-size-adjust: initial;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.blue-drop-shadow {
+    width: 100%;
+    height: 10px;
+    position: relative;
+    align-self: flex-end;
+    background-color: rgb(180, 180, 180);
 }
 
 .photo{
